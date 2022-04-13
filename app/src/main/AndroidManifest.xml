@@ -11,7 +11,8 @@
         android:theme="@style/Theme.TestApp">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.feature.MainActivity"
+            android:label="@string/title_main_activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,11 +20,18 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".ui.feature.basicmodule.BasicActivity" android:label="@string/title_basic_activity" android:exported="false" />
+        <activity android:name=".ui.feature.uimodule.UIActivity" android:label="@string/title_ui_activity" android:exported="false" />
+        <activity android:name=".ui.feature.datamodule.DataActivity" android:label="@string/title_data_activity" android:exported="false" />
 
-        <activity android:name=".UIActivity" android:exported="false" />
-        <activity android:name=".ui.LinearActivity" android:exported="false" />
-        <activity android:name=".ui.RelativeActivity" android:exported="false" />
-        <activity android:name=".ui.FrameActivity" android:exported="false" />
+        <!-- basic -->
+        <activity android:name=".ui.feature.basicmodule.programming.ProgrammingActivity" android:label="@string/title_programming_activity" android:exported="false" />
+
+        <!-- ui -->
+        <activity android:name=".ui.feature.uimodule.layout.LayoutActivity" android:label="@string/title_layout_activity" android:exported="false" />
+        <activity android:name=".ui.feature.uimodule.layout.linear.LinearActivity" android:label="@string/title_linear_activity" android:exported="false" />
+        <activity android:name=".ui.feature.uimodule.layout.relative.RelativeActivity" android:label="@string/title_relative_activity" android:exported="false" />
+        <activity android:name=".ui.feature.uimodule.layout.frame.FrameActivity" android:label="@string/title_frame_activity" android:exported="false" />
 
     </application>
 

@@ -4,25 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".ui.feature.MainActivity">
+    android:orientation="vertical">
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnBasic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="funcBasicClick"
-        android:textAllCaps="false"
-        android:text="Basic" />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnUI"
+        android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="UI" />
+        android:text="var is changeable" />
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnData"
+        android:id="@+id/btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="Data" />
+        android:text="val is unchangeable" />
 </LinearLayout>

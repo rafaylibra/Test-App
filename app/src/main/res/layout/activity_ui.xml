@@ -10,17 +10,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="Linear Layout" />
+        android:text="Layout" />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="Relative Layout" />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:text="Frame Layout" />
+        android:text="Recyler" />
 </LinearLayout>

@@ -4,25 +4,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".ui.feature.MainActivity">
+    android:orientation="vertical">
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnBasic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="funcBasicClick"
-        android:textAllCaps="false"
-        android:text="Basic" />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnUI"
+        android:id="@+id/btnPref"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="UI" />
+        android:text="Preferences" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingStart="2dp"
+        android:text="@string/desc_data_pref" />
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnData"
+        android:id="@+id/btnDatabase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="Data" />
+        android:text="Database" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingStart="2dp"
+        android:text="@string/desc_data_database" />
 </LinearLayout>

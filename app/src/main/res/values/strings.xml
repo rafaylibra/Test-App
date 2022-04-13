@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">Test App</string>
+
+    <!-- activity name -->
+    <string name="title_main_activity">Main Activity</string>
+    <string name="title_basic_activity">Basic Activity</string>
+    <string name="title_ui_activity">UI Activity</string>
+    <string name="title_data_activity">Data Activity</string>
+    <string name="title_programming_activity">Programming Activity</string>
+    <string name="title_layout_activity">Layout Activity</string>
+    <string name="title_linear_activity">Linear Activity</string>
+    <string name="title_relative_activity">Relative Activity</string>
+    <string name="title_frame_activity">Frame Activity</string>
+
+
+    <!-- basic -->
+    <string name="desc_basic_prog">kotlin concept, data types (int, string), arrays, functions, var/val, static</string>
+    <string name="desc_basic_oop">class, object, constructor, inheritance, abstraction, polymorphsim, encapsulation</string>
+    <string name="desc_basic_android">gradle/manifest, lifecycle, intent</string>
+    <string name="desc_basic_arch">mvp, mvvm</string>
+
+    <!-- data -->
+    <string name="desc_data_pref">preference</string>
+    <string name="desc_data_database">sqlite, realm</string>
+
 </resources>
