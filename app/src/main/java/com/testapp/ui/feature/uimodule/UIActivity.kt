@@ -1,44 +1,43 @@
 package com.testapp.ui.feature.uimodule
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
-import androidx.appcompat.widget.AppCompatButton
-import com.testapp.R
+import androidx.appcompat.app.AppCompatActivity
+import com.testapp.databinding.ActivityUiBinding
 import com.testapp.ui.feature.uimodule.layout.LayoutActivity
+import com.testapp.ui.feature.uimodule.recycler.RecyclerActivity
 
 class UIActivity : AppCompatActivity() {
 
-    lateinit var btn1 : AppCompatButton
-    lateinit var btn2 :AppCompatButton
-    lateinit var btn3 :AppCompatButton
+    private lateinit var bind: ActivityUiBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_ui)
-        Log.e("LifeCycle: UI", "onCreate")
+        bind = ActivityUiBinding.inflate(layoutInflater)
+        setContentView(bind.root)
         setupLayout()
         setupClickListeners()
+
     }
 
 
     //______________________________________________________________________________________________ FUNCTIONS
     private fun setupLayout() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        btn1 = findViewById(R.id.btn1)
-        btn2 = findViewById(R.id.btn2)
     }
 
     private fun setupClickListeners() {
-        btn1.setOnClickListener {
+        bind.btntest.setOnClickListener {
             startActivity(Intent(this, LayoutActivity::class.java))
         }
-        btn2.setOnClickListener {
-            //startActivity(Intent(this, RelativeActivity::class.java))
+        bind.btntest2.setOnClickListener {
+            startActivity(Intent(this, RecyclerActivity::class.java))
         }
+
     }
+
 
 
     //______________________________________________________________________________________________ LIFECYCLE

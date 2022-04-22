@@ -1,10 +1,10 @@
 package com.testapp.ui.feature.uimodule.layout
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import com.testapp.R
 import com.testapp.ui.feature.uimodule.layout.frame.FrameActivity

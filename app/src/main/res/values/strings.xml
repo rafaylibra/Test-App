@@ -11,6 +11,8 @@
     <string name="title_linear_activity">Linear Activity</string>
     <string name="title_relative_activity">Relative Activity</string>
     <string name="title_frame_activity">Frame Activity</string>
+    <string name="title_recycler_activity">Recycler Activity</string>
+    <string name="title_recycler_basic_activity">Recycler Basic Activity</string>
 
 
     <!-- basic -->

@@ -1,9 +1,8 @@
 package com.testapp.ui.feature.uimodule.layout.relative
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import com.testapp.R
 
 class RelativeActivity : AppCompatActivity() {

@@ -6,13 +6,13 @@
     android:gravity="center"
     android:orientation="vertical">
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn1"
+        android:id="@+id/btntest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
         android:text="Layout" />
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn2"
+        android:id="@+id/btntest2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
