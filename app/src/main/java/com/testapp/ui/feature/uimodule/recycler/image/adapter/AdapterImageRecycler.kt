@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.annotation.LayoutRes
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.testapp.R
 import com.testapp.databinding.ItemBasicRecyclerBinding
@@ -54,6 +55,8 @@ class AdapterImageRecycler(
                 bind.image.setImageResource(R.drawable.andoid)
             }
             1 -> {
+                //bind.image.setBackgroundColor(ContextCompat.getColor(context, R.color.black))
+                //bind.image.setBackgroundColor(context.resources.getColor(R.color.black))
                 //GlideUtil.setImage(bind.image, "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/TomandJerryTitleCardc.jpg/220px-TomandJerryTitleCardc.jpg")
             }
             2 -> bind.image.setImageResource(R.drawable.andoid)
