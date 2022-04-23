@@ -5,6 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+        android:name=".App"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -36,6 +37,7 @@
 
         <activity android:name=".ui.feature.uimodule.recycler.RecyclerActivity" android:exported="false" android:label="@string/title_recycler_activity" />
         <activity android:name=".ui.feature.uimodule.recycler.basic.RecyclerBasicActivity" android:exported="false" android:label="@string/title_recycler_basic_activity" />
+        <activity android:name=".ui.feature.uimodule.recycler.image.RecyclerImageActivity" android:exported="false" android:label="Recycler Image Activity" />
 
 
 
