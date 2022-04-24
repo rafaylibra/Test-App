@@ -28,13 +28,16 @@ class RecyclerImageActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         //recycler view
         val name = ArrayList<String>()
-        name.add("1") //0
-        name.add("2") //3
-        name.add("3") //4
-        name.add("4") //5
-        name.add("5") //6
-        name.add("6") //7
-        name.add("7") //8
+        name.add("Red Apple") //0
+        name.add("BaGallery") //3
+        name.add("ELO") //4
+        name.add("Jomo.pk") //5
+        name.add("OH My Grill") //6
+        name.add("KHAZANY") //7
+        name.add("Optp") //8
+
+
+
         adapter = AdapterImageRecycler(this, name)
         bind.recycler.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
         bind.recycler.adapter = adapter
