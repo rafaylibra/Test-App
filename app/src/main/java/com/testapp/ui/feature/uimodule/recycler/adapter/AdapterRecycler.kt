@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.testapp.R
 import com.testapp.databinding.ItemBasicRecyclerBinding
 import com.testapp.ui.feature.uimodule.recycler.basic.RecyclerBasicActivity
+import com.testapp.ui.feature.uimodule.recycler.horizontal.RecyclerHorizontalActivity
 import com.testapp.ui.feature.uimodule.recycler.image.RecyclerImageActivity
 
 class AdapterRecycler(
@@ -52,7 +53,7 @@ class AdapterRecycler(
             when (position) {
                 0 -> context.startActivity(Intent(context, RecyclerBasicActivity::class.java))
                 1 -> context.startActivity(Intent(context, RecyclerImageActivity::class.java))//context.startActivity(Intent(context, RecyclerImageActivity::class.java))
-                2 -> Toast.makeText(context, item, Toast.LENGTH_SHORT).show()
+                2 -> context.startActivity(Intent(context, RecyclerHorizontalActivity::class.java))
                 3 -> Toast.makeText(context, item, Toast.LENGTH_SHORT).show()
                 4 -> Toast.makeText(context, item, Toast.LENGTH_SHORT).show()
             }

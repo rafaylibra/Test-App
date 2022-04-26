@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:layout_marginTop="30dp"
+
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ramazan Offer"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="15dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/storeimageback"
+            >
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/storename"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            tools:text="Ramazan Offer" >
+        </androidx.appcompat.widget.AppCompatTextView>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="210dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:id="@+id/ratingicon"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+
+                >
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginRight="8dp"
+                android:id="@+id/rating"
+                android:layout_gravity="center"
+                android:textColor="@color/black">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginRight="0dp"
+                android:id="@+id/review"
+                android:layout_gravity="center"
+                android:textColor="@color/black">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

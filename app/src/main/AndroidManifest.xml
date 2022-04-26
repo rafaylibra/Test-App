@@ -38,6 +38,7 @@
         <activity android:name=".ui.feature.uimodule.recycler.RecyclerActivity" android:exported="false" android:label="@string/title_recycler_activity" />
         <activity android:name=".ui.feature.uimodule.recycler.basic.RecyclerBasicActivity" android:exported="false" android:label="@string/title_recycler_basic_activity" />
         <activity android:name=".ui.feature.uimodule.recycler.image.RecyclerImageActivity" android:exported="false" android:label="Recycler Image Activity" />
+        <activity android:name=".ui.feature.uimodule.recycler.horizontal.RecyclerHorizontalActivity" android:exported="false" android:label="Recycler Horizontal Activity" />
 
 
 
