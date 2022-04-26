@@ -54,6 +54,9 @@ class AdapterHorizontalRecycler(
                 bind.rating.text = "4.0"
                 bind.review.text = "(10K+)"
                 bind.ratingicon.setImageResource(R.drawable.ratingicon)
+                bind.pricing.text = "$$$"
+                bind.category.text = "Pizza"
+                bind.delivery.text = "85"
             }
         }
 

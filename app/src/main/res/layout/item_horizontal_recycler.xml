@@ -46,7 +46,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="30dp">
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
@@ -55,7 +55,7 @@
             android:id="@+id/storename"
             android:layout_gravity="center"
             android:textColor="@color/black"
-            tools:text="Ramazan Offer" >
+            tools:text="Store Name" >
         </androidx.appcompat.widget.AppCompatTextView>
 
 
@@ -103,6 +103,52 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:id="@+id/pricing"
+            tools:text="Pricing">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/category"
+            tools:text="Category">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:id="@+id/delivery"
+            tools:text="Delivery Charges">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+
+
+    </LinearLayout>
+
+
 
 
 </LinearLayout>
