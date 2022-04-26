@@ -51,12 +51,14 @@ class AdapterHorizontalRecycler(
             0 -> {
 
                 bind.storeimageback.setImageResource(R.drawable.pizza)
+                bind.imagetxt.text = "Ramadan Deals"
                 bind.rating.text = "4.0"
                 bind.review.text = "(10K+)"
                 bind.ratingicon.setImageResource(R.drawable.ratingicon)
                 bind.pricing.text = "$$$"
                 bind.category.text = "Pizza"
-                bind.delivery.text = "85"
+                bind.deliveryicon.setImageResource(R.drawable.deliveryicon)
+                bind.delivery.text = "85Rs"
             }
         }
 
