@@ -4,18 +4,19 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.testapp.databinding.ActivityHorizontalRecyclerBinding
 import com.testapp.databinding.ActivityRecyclerBinding
 import com.testapp.ui.feature.uimodule.recycler.horizontal.adapter.AdapterHorizontalRecycler
 
 class RecyclerHorizontalActivity : AppCompatActivity() {
 
-    private lateinit var bind: ActivityRecyclerBinding
+    private lateinit var bind: ActivityHorizontalRecyclerBinding
     private lateinit var adapter: AdapterHorizontalRecycler
     //private lateinit var person: Person
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        bind = ActivityRecyclerBinding.inflate(layoutInflater)
+        bind = ActivityHorizontalRecyclerBinding.inflate(layoutInflater)
         setContentView(bind.root)
         setupLayout()
         setupClickListeners()
@@ -31,14 +32,15 @@ class RecyclerHorizontalActivity : AppCompatActivity() {
         name.add("ELO") //4
         name.add("Jomo.pk") //5
         name.add("OH My Grill") //6
-        name.add("KHAZANY") //7
+        name.add("KHAN") //7
         name.add("Optp") //8
 
 
 
-        adapter = AdapterHorizontalRecycler(this, name)
-        bind.recycler.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL, false)
-        bind.recycler.adapter = adapter
+
+        adapter = AdapterHorizontalRecycler(this, name,)
+        bind.horizontalrecycler.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL, false)
+        bind.horizontalrecycler.adapter = adapter
     }
 
     private fun setupClickListeners() {

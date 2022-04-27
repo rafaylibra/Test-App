@@ -15,15 +15,17 @@ import com.testapp.util.GlideUtil
 
 class AdapterHorizontalRecycler(
     private val context: Context,
-    private val data: ArrayList<String>
-) : RecyclerView.Adapter<AdapterHorizontalRecycler.BasicViewHolder>() {
+    private val name: ArrayList<String>
+
+    )
+    : RecyclerView.Adapter<AdapterHorizontalRecycler.BasicViewHolder>() {
 
     lateinit var bind: ItemHorizontalRecyclerBinding
 
     override fun onBindViewHolder(holder: BasicViewHolder, position: Int) {
-        val item = data[position]
+        val item = name[position]
         updateUI(holder, item, position)
-        clickListeners(holder, item, position)
+        clickListeners(holder, item,  position)
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BasicViewHolder {
         val v = parent.inflate(R.layout.item_horizontal_recycler, false)
@@ -34,7 +36,7 @@ class AdapterHorizontalRecycler(
         return LayoutInflater.from(context).inflate(layoutRes, this, attachToRoot)
     }
     override fun getItemCount(): Int {
-        return data.size
+        return name.size
     }
     override fun getItemId(position: Int): Long {
         return position.toLong()
@@ -42,6 +44,7 @@ class AdapterHorizontalRecycler(
     override fun getItemViewType(position: Int): Int {
         return position
     }
+
     //______________________________________________________________________________________________
     private fun updateUI(holder: BasicViewHolder, item: String, position: Int) {
         bind.storename.text = item
@@ -60,6 +63,31 @@ class AdapterHorizontalRecycler(
                 bind.deliveryicon.setImageResource(R.drawable.deliveryicon)
                 bind.delivery.text = "85Rs"
             }
+            1 -> {
+
+                bind.storeimageback.setImageResource(R.drawable.pizza)
+                bind.imagetxt.text = "Ramadan Deals"
+                bind.rating.text = "4.0"
+                bind.review.text = "(10K+)"
+                bind.ratingicon.setImageResource(R.drawable.ratingicon)
+                bind.pricing.text = "$$$"
+                bind.category.text = "Pizza"
+                bind.deliveryicon.setImageResource(R.drawable.deliveryicon)
+                bind.delivery.text = "85Rs"
+            }
+            2 -> {
+
+                bind.storeimageback.setImageResource(R.drawable.pizza)
+                bind.imagetxt.text = "Ramadan Deals"
+                bind.rating.text = "4.0"
+                bind.review.text = "(10K+)"
+                bind.ratingicon.setImageResource(R.drawable.ratingicon)
+                bind.pricing.text = "$$$"
+                bind.category.text = "Pizza"
+                bind.deliveryicon.setImageResource(R.drawable.deliveryicon)
+                bind.delivery.text = "85Rs"
+            }
+
         }
 
 
@@ -95,6 +123,7 @@ class AdapterHorizontalRecycler(
 
     private fun clickListeners(holder: BasicViewHolder, item: String, position: Int) {
         bind.root.setOnClickListener {
+
             Toast.makeText(context, item, Toast.LENGTH_SHORT).show()
 
         }

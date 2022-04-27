@@ -5,19 +5,20 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.testapp.databinding.ActivityImageRecyclerBinding
 import com.testapp.databinding.ActivityRecyclerBinding
 import com.testapp.ui.feature.uimodule.recycler.basic.adapter.AdapterBasicRecycler
 import com.testapp.ui.feature.uimodule.recycler.image.adapter.AdapterImageRecycler
 
 class RecyclerImageActivity : AppCompatActivity() {
 
-    private lateinit var bind: ActivityRecyclerBinding
+    private lateinit var bind: ActivityImageRecyclerBinding
     private lateinit var adapter: AdapterImageRecycler
     //private lateinit var person: Person
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        bind = ActivityRecyclerBinding.inflate(layoutInflater)
+        bind = ActivityImageRecyclerBinding.inflate(layoutInflater)
         setContentView(bind.root)
         setupLayout()
         setupClickListeners()
@@ -39,8 +40,8 @@ class RecyclerImageActivity : AppCompatActivity() {
 
 
         adapter = AdapterImageRecycler(this, name)
-        bind.recycler.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
-        bind.recycler.adapter = adapter
+        bind.imagerecycler.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
+        bind.imagerecycler.adapter = adapter
     }
 
     private fun setupClickListeners() {
